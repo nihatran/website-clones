@@ -97,6 +97,7 @@ nav > ul {
     color: white;
     background-color: black;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .cosmobtn:hover {

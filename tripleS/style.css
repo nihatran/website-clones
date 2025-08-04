@@ -153,12 +153,26 @@ h3 ~ p {
     opacity: 0.7;
 }
 
+
+.section-main-youtube {
+    width: 100vw;
+    height: 800px;
+    background-color: black;
+    border: 2px solid orange;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+
 @media only screen and (max-width: 900px) {
-  .c-item, .carousel-caption, .section-main {
+    
+    .c-item, .carousel-caption, .section-main, #hero-carousel {
     height: 500px;
     }
+    
 }   
-
-
-
 

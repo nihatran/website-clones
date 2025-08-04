@@ -153,25 +153,41 @@ h3 ~ p {
     opacity: 0.7;
 }
 
-
 .section-main-youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height: 800px;
+    height: 775px;
     background-color: black;
-    border: 2px solid orange;
+    padding: 50px 0;
 }
 
 .video-wrapper {
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
 }
 
+iframe {
+    height: 675px;
+    width: 1200px;
+}
 
 @media only screen and (max-width: 900px) {
     
     .c-item, .carousel-caption, .section-main, #hero-carousel {
     height: 500px;
+    }
+
+    .section-main-youtube {
+        height: 475px;
+    }
+
+    iframe {
+        height: 375px;
     }
     
 }   

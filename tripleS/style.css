@@ -168,12 +168,40 @@ h3 ~ p {
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 iframe {
     height: 675px;
     width: 1200px;
+}
+
+.member-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+    margin-bottom: 100px;
+
+    background-color: black;
+
+
+}
+
+.a25logo {
+    width: 100%;
+    max-width: 678px;
+    min-height: auto;
+    padding: 0 20px;
+}
+
+.awakelogo {
+    width: 100%;
+    max-width: 230px;
+    min-height: auto;
+    padding-top: 40px;
 }
 
 @media only screen and (max-width: 900px) {

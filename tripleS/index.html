@@ -142,7 +142,7 @@
 
     <section class="section-main-youtube">
         <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/2fsXORTi0Rk?si=rekJD3pAq8XNdpaV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="youtube-vid" src="https://www.youtube.com/embed/2fsXORTi0Rk?si=rekJD3pAq8XNdpaV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -180,8 +180,26 @@
     </section>
 
     <section class="section-home-album">
-        <div class="album-header">
-            <h4>Album</h4>
+        <div class="album-container">
+            <div class="album-header-wrapper">
+                <div class="album-header">
+                    <h4>Album</h4>
+                </div>
+            </div>
+            <div class="album-tracklist-container">
+                <div class="album-title">
+                    <h5>&lt;ASSEMBLE25&gt;</h5>
+                </div>
+                <div class="album-tracklist">
+                    <div class="album-cover-container">
+                        <img class="album-cover" src="./assets/a25albumcover.jpg" alt="album-cover">
+                        <button class="play-btn"><a href="https://hypeddit.com/triples/lovelution" target="_blank">PLAY ON OTHER PLATFORMS</a></button>
+                    </div>
+                    <div class="tracklist-container">
+                        <iframe class="spotify-tracklist" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/4MGXby5GGnly4aVwdZuwak?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

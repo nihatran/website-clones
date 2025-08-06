@@ -9,6 +9,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .header, .navbar{
@@ -176,18 +177,20 @@ iframe {
     width: 1200px;
 }
 
+.section-home-member {
+    width: 100vw;
+    background-color: black;
+}
+
 .member-header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
     height: 400px;
-    margin-bottom: 100px;
-
     background-color: black;
-
-
 }
 
 .a25logo {
@@ -204,6 +207,21 @@ iframe {
     padding-top: 40px;
 }
 
+.member-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.member-container img {
+    height: auto;
+    max-width: 290px;
+}
+
 @media only screen and (max-width: 900px) {
     
     .c-item, .carousel-caption, .section-main, #hero-carousel {
@@ -216,6 +234,15 @@ iframe {
 
     iframe {
         height: 375px;
+    }
+
+    .member-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .member-container img {
+        max-width: 180px;
+        height: auto;
     }
     
 }   
